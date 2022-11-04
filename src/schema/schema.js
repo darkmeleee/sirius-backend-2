@@ -532,9 +532,9 @@ const Mutataion = new GraphQLObjectType({
                                 } else {
                                     Reader
                                             .findById(args.readerID) 
-                                            .exec(funciton(err, reader){
-                                                 return reader;
-                                                  });
+                                            .exec(function(err,reader){
+                                                return reader;
+                                            })
                                 }
                             })
 
