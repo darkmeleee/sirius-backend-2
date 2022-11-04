@@ -325,27 +325,27 @@ const Mutataion = new GraphQLObjectType({
                 bookID: {
                     type: GraphQLString
                 },
-                readerID: {
+                bookName: {
                     type: GraphQLString
                 },
-                rentDate: {
+                bookTime: {
                     type: GraphQLInt
                 },
-                rentPeriod: {
-                    type: GraphQLInt
+                bookLink: {
+                    type: GraphQLString
                 },
-                penaltyAmount: {
-                    type: GraphQLInt
+                authorID: {
+                    type: GraphQLString
                 }
             },
             resolve(parent, args) {
                 return Book.findByIdAndUpdate(args.bookID, {
                     $set: {
-                        bookID: args.bookID,
-                        readerID: args.readerID,
-                        rentdate: args.rentDate,
-                        rentPeriod: args.rentPeriod,
-                        penaltyAmount: args.penaltyAmount
+                    
+                        bookName: args.bookName,
+                        bookTime: args.bookTime,
+                        bookLink: args.bookLink,
+                        authoriD: args.authoriD
                     }
                 }, {
                     new: true
