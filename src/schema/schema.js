@@ -514,7 +514,6 @@ const Mutataion = new GraphQLObjectType({
                                 var diff = todayis * -1 - rent.rentDate * -1;
                                 if (diff > book.bookTime) {
                                     const diff1 = diff - book.bookTime;
-                                    console.log("MEOWWWWWWWWWWWWWWW");
                                     Reader.findOneAndUpdate({
                                         _id: args.readerID
                                     }, {
