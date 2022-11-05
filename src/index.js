@@ -13,7 +13,7 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect('mongodb+srv://mishakma:1488kek@cluster0.6z3kv.mongodb.net/mainbase2?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('mongodb+srv://mishakma:1488kek@cluster0.6z3kv.mongodb.net/mainbase2?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true}) // don`t care about leaks
 const dbConnection = mongoose.connection;
 dbConnection.on('error', err => console.log(`Connection error ${err }`));
 dbConnection.once('open', () => console.log(`Connected`));
