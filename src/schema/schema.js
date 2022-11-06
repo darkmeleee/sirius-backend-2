@@ -446,7 +446,7 @@ const Mutataion = new GraphQLObjectType({
                     $set: {
                         bookID: args.bookID,
                         readerID: args.readerID,
-                        rentdate: args.rentDate,
+                        rentDate: args.rentDate,
                         rentPeriod: args.rentPeriod,
                         penaltyAmount: args.penaltyAmount
                     }
