@@ -172,7 +172,7 @@ const Mutataion = new GraphQLObjectType({
                 const book = new Book({
                     bookName: args.bookName,
                     bookTime: args.bookTime,
-                    bookLink: args.bbookLink,
+                    bookLink: args.bookLink,
                     authorID: args.authorID,
                 })
                 book.save();
